@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Shrikhand&display=swap');
+
+/* Primary : #9356DC 
+Secondary : #FF79DA 
+Tertiary : #99E2D0
+
+Fonts 
+Logo et titres: Shrikhand
+Texte: Roboto */
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1400px;
+}
