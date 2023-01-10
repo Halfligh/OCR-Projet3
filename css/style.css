@@ -425,3 +425,112 @@ a{
     text-align: center;
     box-shadow: 0px 3px 8px 4px #d3d3d3;
 }
+
+.loader{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    opacity: 0;
+    animation: fadeOut 3s ;
+}
+
+/* Animations CSS */
+
+.green-check{
+    color: #F2F2F2;
+    background-color: #99E2D0;
+    height: 103px;
+    width: 5%;
+}
+
+.animation-check{
+    display: flex;
+    flex-direction: column;
+}
+
+/* 
+Animations à réaliser 
+Boutons: 
+Au survol la couleur de fond des boutons principaux devra légérement s'éclaircir. 
++ Ombre de portée davantage visible
+Le coeur se remplit progressivement au survol.
+
+Page d'accueil: 
+Loading spinner : 1 à 3s - FullWidth FullHeight - pas de librairies - cf charte graphique
+
+Pages de menu: 
+Apparition des plats progressive avec léger décalage, dans le temps.
+Ils pourront soit apparaître un par un, soit par groupe
+Les visiteurs peuvent ajouter les plats à leur commande en cliquant dessus.
+Fait apparaitre une petite coche à droite à droite du plat 
+coche à droite : 
+- 20% - avec dedans icon validation dans un rond en blanc - bgcolor : #97DECB
+ */
+
+
+/* Keyframes */
+
+
+
+
+@keyframes fadeOut {
+    0% {
+        opacity:1;
+        z-index: 2;
+    }
+
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@-moz-keyframes fadeOut { /* sur Firefox */
+    0% {
+        opacity:1;
+        z-index: 2;
+    }
+
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@-webkit-keyframes fadeOut { /* sur Safari et Chrome */
+    0% {
+        opacity:1;
+        z-index: 2;
+    }
+
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+@-o-keyframes fadeOut { /* sur Opera */
+    0% {
+        opacity:1;
+        z-index: 2;
+    }
+
+    50%{
+        opacity:1;
+    }
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
