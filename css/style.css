@@ -8,6 +8,7 @@ Tag : #0C8F6E
 
 background-section : #F7F7F7
 background-footer : #363636
+location-placeholder : #EAEAEA
 
 Fonts 
 Logo et titres: Shrikhand
@@ -20,11 +21,61 @@ body{
     max-width: 1400px;
 }
 
+.logo-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.logo{
+    width: 170px;
+}
+
+.place-holder{
+    background-color: #EAEAEA;
+    background : linear-gradient(0deg, rgba(234,234,234,1) 90%, rgba(207,207,207,1) 100%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #363636;
+}
+
+.location{
+    margin-left: 20px;
+    font-size: 16px;
+}
+
 .section-title{
     padding-left: 20px;
 }
 
+.exploration-section{
+    text-align: center;
+    padding: 10%;
+    background-color: #F7F7F7;
+}
 
+.exploration-span{
+    font-weight: 100;
+}
+
+.exploration-button{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 30px;
+    color: white;
+    background-color: #9356DC;
+    border: none;
+    font-weight: 300;
+    background : linear-gradient(0deg, rgba(164,91,220,1) 0%, rgba(227,112,218,1) 90%);
+}
+
+.function-section{
+    margin-top: 42px;
+}
 
 .function-wrapper{
     list-style-type: none;
