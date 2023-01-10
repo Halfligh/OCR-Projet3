@@ -21,6 +21,11 @@ body{
     max-width: 1400px;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 .logo-block{
     display: flex;
     justify-content: center;
@@ -187,6 +192,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: black;
 }
 
 .restaurant-tags{
@@ -198,6 +204,7 @@ body{
     margin: 0;
     padding: 15px;
     padding-bottom: 0px;
+    text-decoration: none;
 }
 
 .h4-restaurant-place{
