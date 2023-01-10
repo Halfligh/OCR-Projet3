@@ -34,7 +34,7 @@ a{
 }
 
 .logo{
-    width: 170px;
+    width: 200px;
 }
 
 .place-holder{
@@ -49,11 +49,12 @@ a{
 
 .location{
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .section-title{
     padding-left: 20px;
+    font-size: 32px;
 }
 
 .exploration-section{
@@ -64,28 +65,33 @@ a{
 
 .exploration-span{
     font-weight: 100;
+    font-size: 20px;
+    color: #363636;
 }
 
 .exploration-button{
     margin-top: 30px;
     margin-bottom: 20px;
-    padding: 15px;
+    padding: 20px;
     border-radius: 30px;
     color: white;
     background-color: #9356DC;
     border: none;
     font-weight: 300;
     background : linear-gradient(0deg, rgba(164,91,220,1) 0%, rgba(227,112,218,1) 90%);
+    box-shadow: 0px 3px 8px 4px #d3d3d3;
+    font-size: 18px;
 }
 
 .function-section{
-    margin-top: 42px;
+    padding-top: 30px;
 }
 
 .function-wrapper{
     list-style-type: none;
     width: 89%;
     margin-left: 6%;
+    padding-top: 10px;
     padding-bottom: 42px;
     padding-inline-start: 0;
     
@@ -96,22 +102,28 @@ a{
     flex-direction: row;
     align-items: center;
     background-color: #F7F7F7;
-    box-shadow: 0px 2px 5px 4px #F2F2F2;
-    margin-bottom: 20px;
+    box-shadow: 0px 3px 8px 4px #e5e4e4;
+    margin-bottom: 25px;
     padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 30px;
     justify-content: center;
 }
 
+.function-button:hover{
+    background-color: rgba(148, 86, 220, 0.2);
+}
+
 .number-icon{
     background-color: #9356DC;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 30px;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     text-align: center;
-    line-height: 20px;
+    line-height: 25px;
     position: absolute;
     margin-right: 88%;
 }
@@ -140,11 +152,12 @@ a{
 .function-title{
     margin-left: 30px;
     font-weight: 500;
+    font-size: 22px;
 }
 
 .restaurant-section{
     background-color: #F7F7F7;
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 .restaurants-wrapper{
@@ -156,7 +169,7 @@ a{
 
 .restaurant-card{
     background-color: white;
-    height: 260px;
+    height: 320px;
     width: 100%;
     border-radius: 30px;
     box-shadow: 0px 2px 5px 4px #F2F2F2;
@@ -177,14 +190,16 @@ a{
 
 .new-tag{
     background-color: #99E2D0 ;
-    width: 50px;
+    width: 80px;
     font-size: 13px;
     position: absolute;
     padding: 8px;
-    border-radius: 5px;
-    margin-left: 72%;
+    border-radius: 3px;
+    margin-left: 66%;
     color: #0C8F6E;
     font-weight:500;
+    font-size: 18px;
+    text-align: center;
 }
 
 .bottom-card{
@@ -197,12 +212,15 @@ a{
 
 .restaurant-tags{
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    font-size: 20px;
 }
 
 .h3-restaurant-name{
     margin: 0;
     padding: 15px;
+    padding-top: 0px;
     padding-bottom: 0px;
     text-decoration: none;
 }
@@ -231,6 +249,7 @@ a{
     list-style-type: none;
     padding-left: 0;
     color: white;
+    font-size: 20px;
 }
 
 
@@ -239,7 +258,7 @@ a{
     text-decoration: none;
     display: flex;
     align-items: center;
-    height: 30px;
+    height: 35px;
 }
 
 .fa-utensils{
@@ -255,4 +274,149 @@ a{
 .footer-title{
     font-family: Shrikhand;
     margin-top: 0px;
+    font-size: 24px;
+}
+
+
+/* Ajouts pour les pages menus */
+
+.arrow-left{
+    position: absolute;
+    margin-right: 85%;
+    font-size: 25px;
+    vertical-align: middle;
+    color: #363636;
+}
+
+.menu-photo-div{
+    height: 320px;
+    width: 100%;
+}
+
+.menu-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.menu-wrapper{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    background-color: #F7F7F7;
+    margin-top: -42px;
+    padding-top: 10px;
+    z-index: 3;
+    position: relative;
+}
+
+.menu-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.like-heart{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-heart{
+    font-size: 30px;
+}
+
+.menu-page-title{
+    font-family: Shrikhand;
+    margin: 0;
+    padding: 20px;
+    font-size: 35px;
+}
+
+.menu-section{
+    background-color: transparent;
+    padding-bottom: 20px;
+}
+
+.menu-section-title{
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.menu-section-underline{
+    background-color: #99E2D0;
+    height: 5px;
+    margin-left: 20px;
+    width: 12%;
+}
+
+.menu-ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.menu-div{
+    background-color: white;
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 3px 8px 4px #e7e6e6;
+}
+
+.menu-plate-title{
+    margin: 0;
+    font-size: 24px;
+}
+
+.infos-and-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 21px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+
+.infos{
+    margin: 0;
+}
+
+.price{
+    margin: 0;
+    padding-right: 5px;
+    font-weight: 500;
+}
+
+.order-button-div{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    background-color: #F7F7F7;
+    padding-bottom: 50px;
+}
+
+.order-button{
+    font-size: 20px;
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 50px;
+    color: white;
+    background-color: #9356DC;
+    border: none;
+    font-weight: 500;
+    background : linear-gradient(0deg, rgba(164,91,220,1) 0%, rgba(227,112,218,1) 90%);
+    text-align: center;
+    box-shadow: 0px 3px 8px 4px #d3d3d3;
 }
