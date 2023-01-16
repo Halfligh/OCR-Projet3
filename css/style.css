@@ -334,6 +334,15 @@ a{
     font-size: 30px;
 }
 
+.heart-icon{
+    color: #363636;
+    transition: fill 1s ease-in-out;
+}
+
+.heart-icon:hover{
+    animation: fill-icon 1s ease-in-out forwards;
+}
+
 .menu-page-title{
     font-family: Shrikhand;
     margin: 0;
@@ -344,6 +353,8 @@ a{
 .menu-section{
     background-color: transparent;
     padding-bottom: 20px;
+    animation: slide-up 0.5s ease-in;
+    transform: translateY(0%);
 }
 
 .menu-section-title{
@@ -365,6 +376,26 @@ a{
 .menu-ul{
     list-style-type: none;
     padding-inline-start: 0;
+    opacity: 0;
+    animation: reveal 1s ease-in-out forwards; 
+}
+
+.menu-ul li {
+    opacity: 0;
+    animation: reveal 0.8s ease-in forwards;
+    animation-delay: 0s;
+}
+
+.menu-ul li:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.menu-ul li:nth-child(2) {
+    animation-delay: 0.6s;
+}
+
+.menu-ul li:nth-child(3) {
+    animation-delay: 0.9s;
 }
 
 .menu-div{
@@ -458,14 +489,14 @@ Animations à réaliser
 Boutons: 
 Au survol la couleur de fond des boutons principaux devra légérement s'éclaircir. 
 + Ombre de portée davantage visible
-Le coeur se remplit progressivement au survol.
+Le coeur se remplit progressivement au survol. - Done with gpt
 
 Page d'accueil: 
 Loading spinner : 1 à 3s - FullWidth FullHeight - pas de librairies - cf charte graphique
 
 Pages de menu: 
-Apparition des plats progressive avec léger décalage, dans le temps.
-Ils pourront soit apparaître un par un, soit par groupe
+Apparition des plats progressive avec léger décalage, dans le temps. - Done with gpt
+Ils pourront soit apparaître un par un, soit par groupe - Done with gpt
 Les visiteurs peuvent ajouter les plats à leur commande en cliquant dessus.
 Fait apparaitre une petite coche à droite à droite du plat 
 coche à droite : 
@@ -533,4 +564,19 @@ coche à droite :
         opacity: 0;
         z-index: -1;
     }
+}
+
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slide-up {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes fill-icon {
+    0% { color: transparent; }
+    100% { color: red; }
 }
