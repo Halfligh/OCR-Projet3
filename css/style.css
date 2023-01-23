@@ -126,7 +126,19 @@ a{
 }
 
 .function-button:hover{
-    background-color: rgba(148, 86, 220, 0.2);
+    background-color: rgba(156, 106, 213, 0.2);
+}
+
+.function-button:hover .fa-mobile-screen-button {
+    color: #9356DC;
+}
+
+.function-button:hover .fa-list {
+    color: #9356DC;
+}
+
+.function-button:hover .fa-store {
+    color: #9356DC;
 }
 
 .number-icon{
@@ -465,11 +477,15 @@ a{
 }
 
 .menu-div:hover .infos {
-    width: 80%;
+    width: 70%;
 }
 
 .menu-div:hover .price {
-    margin-left: 60%;
+    margin-left: 55%;
+}
+
+.menu-div:hover .menu-display {
+    width: 70%;
 }
 
 .menu-display{
@@ -481,6 +497,9 @@ a{
 .menu-plate-title{
     margin: 0;
     font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .infos-and-price{
@@ -524,7 +543,7 @@ a{
 }
 
 .fa-solid.fa-circle-check {
-    animation: rotate 0.3s ease-in-out;
+    animation: rotate 0.5s ease-in-out;
 }
 
 .order-button-div{
@@ -632,6 +651,10 @@ a{
 
     .menu-div:hover .price {
         margin-left: 68%;
+    }
+
+    .menu-div:hover .infos {
+        width: 100%;
     }
 }
 
