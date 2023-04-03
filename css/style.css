@@ -689,6 +689,27 @@ a{
         width: 10%;
     }
 
+    .restaurant-card{
+        height: 320px;
+        width: 100%;
+    }
+
+    .restaurants-wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .new-tag{
+        display: none;
+    }
+
+    .link-unity{
+        display: flex;
+        width: 45%;
+    }
+
 
 }
 
